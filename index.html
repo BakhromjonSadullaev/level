@@ -35,20 +35,91 @@
     </nav>
     <section class="registeration">
       <main>
-        <div class="line">
-          <div>
+        <div class="row1">
+          <div class="destination">
             <input
               type="text"
-              id="text"
-              name="destiation"
+              name="address"
+              class="address"
               placeholder="Type your destination..."
             />
             <i class="fa-solid fa-location-dot"></i>
           </div>
-          <div>
-            <input type="date" id="date" name="date" placeholder="Check in" />
-            <i class="fa-solid fa-location-dot"></i>
+          <div class="date_input">
+            <label for="checkIn">Check In</label>
+            <input
+              id="checkIn"
+              type="date"
+              placeholder="Check in"
+              class="date"
+            />
+            <i class="fa-solid fa-calendar-days"></i>
           </div>
+          <div class="date_input">
+            <label for="checkIn">Check out</label>
+            <input
+              id="checkIn"
+              type="date"
+              placeholder="Check in"
+              class="date"
+            />
+            <i class="fa-solid fa-calendar-days"></i>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="room_number">
+            <select class="adult_number">
+              <option selected="Adults">Adults</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="room_number">
+            <select class="children_number">
+              <option selected="Children">Children</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="room_number">
+            <select class="room">
+              <option selected="Room">Room</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <i class="fa-solid fa-bed"></i>
+          </div>
+          <input type="submit" value="Check availability" class="btn" />
+        </div>
+        <div class="row3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#">Need Help?</a>
         </div>
       </main>
     </section>

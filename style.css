@@ -58,41 +58,149 @@ nav > ul > li:active {
 
 .registeration {
   background-image: url("https://www.tooplate.com/templates/2095_level/img/bg-img-1.jpg");
-  height: 500px;
+  height: 80%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 100px;
-}
-main {
-  height: 200px;
-  background-color: aliceblue;
-  max-width: 70%;
-  margin: auto;
-  padding: 25px;
-}
-
-.line {
+  padding: 4rem 1rem;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
 }
 
-div > input {
-  padding: 10px 0 10px 30px;
-  font-size: 12pt;
+main {
+  background-color: white;
+  display: inline-block;
+  margin: auto;
+  padding: 40px 50px;
 }
-input[type="date"]::-webkit-inner-spin-button,
+
+.row1 {
+  display: flex;
+}
+.destination {
+  position: relative;
+}
+.address {
+  padding: 10px 20px 5px 40px;
+  font-size: large;
+  outline: none;
+}
+
+.address:focus {
+  border: 1px solid #ee5057;
+}
+.destination > i {
+  position: absolute;
+  left: 0;
+  margin: 10px;
+  color: #ee5057;
+  font-size: 17pt;
+}
+.date_input {
+  position: relative;
+}
+.date {
+  padding: 10px 100px 5px 40px;
+  font-size: large;
+  outline: none;
+}
+
+.date:focus {
+  border: 1px solid #ee5057;
+}
+
+.date_input > i {
+  position: absolute;
+  left: 0;
+  margin: 10px;
+  color: #ee5057;
+  font-size: 17pt;
+}
+
+.date_input > label {
+  position: absolute;
+  left: 40px;
+  top: 12px;
+  color: rgb(156, 156, 156);
+  font-weight: lighter;
+}
+
 input[type="date"]::-webkit-calendar-picker-indicator {
-  display: none;
+  display: block;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
   -webkit-appearance: none;
 }
 
-div > i {
-  margin: 10px;
+input[type="date"]::-webkit-datetime-edit-text {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type="date"]::-webkit-datetime-edit-month-field {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type="date"]::-webkit-datetime-edit-day-field {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type="date"]::-webkit-datetime-edit-year-field {
+  -webkit-appearance: none;
+  display: none;
+}
+
+input[type="date"]::placeholder {
+  display: block;
+}
+
+.row2 {
+  display: flex;
+  margin-top: 25px;
+}
+.room_number {
   position: relative;
+}
+
+.room_number > select {
+  padding: 10px 100px 10px 50px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.room_number > select:focus {
+  border: 1px solid #ee5057;
+}
+
+.room_number > i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
   color: #ee5057;
-  font-size: 20px;
+}
+
+.btn {
+  padding: 0 23px;
+  background-color: #ee5057;
+  outline: none;
+  border: none;
+}
+.btn:hover {
+  background-color: #98191f;
+}
+.row3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.row3 > a {
+  text-decoration: none;
+  color: #ee5057;
 }
 
 @media screen and (max-width: 1000px) {
@@ -107,5 +215,38 @@ div > i {
   }
   .burger_icon {
     display: block;
+  }
+}
+@media screen and (max-width: 1346px) {
+  main {
+    width: 100%;
+    padding: 25px 10px;
+  }
+  .row1 {
+    flex-direction: column;
+    margin: 0;
+  }
+  .address {
+    width: 100%;
+  }
+  .date {
+    width: 100%;
+  }
+  .date_input {
+    margin-top: 20px;
+  }
+  .row2 {
+    flex-direction: column;
+    margin: 0;
+  }
+  .room_number > select {
+    width: 100%;
+    margin: 0;
+  }
+  .room_number {
+    margin: 10px 0;
+  }
+  .btn {
+    padding: 20px 10px;
   }
 }
