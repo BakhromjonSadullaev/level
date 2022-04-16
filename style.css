@@ -58,7 +58,7 @@ nav > ul > li:active {
 
 .registeration {
   background-image: url("https://www.tooplate.com/templates/2095_level/img/bg-img-1.jpg");
-  height: 80%;
+  height: 80vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -80,6 +80,7 @@ main {
 }
 .destination {
   position: relative;
+  cursor: pointer;
 }
 .address {
   padding: 10px 20px 5px 40px;
@@ -89,6 +90,7 @@ main {
 
 .address:focus {
   border: 1px solid #ee5057;
+  border-style: groove;
 }
 .destination > i {
   position: absolute;
@@ -99,14 +101,26 @@ main {
 }
 .date_input {
   position: relative;
+  cursor: pointer;
 }
-.date {
+.checkin {
+  padding: 10px 100px 5px 40px;
+  font-size: large;
+  outline: none;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.checkin:focus {
+  border: 1px solid #ee5057;
+}
+
+.checkout {
   padding: 10px 100px 5px 40px;
   font-size: large;
   outline: none;
 }
-
-.date:focus {
+.checkout:focus {
   border: 1px solid #ee5057;
 }
 
@@ -164,6 +178,7 @@ input[type="date"]::placeholder {
 }
 .room_number {
   position: relative;
+  cursor: pointer;
 }
 
 .room_number > select {
@@ -203,6 +218,78 @@ input[type="date"]::placeholder {
   color: #ee5057;
 }
 
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0;
+  background-color: #ee5057;
+  color: white;
+  border-radius: 0px 0px 96px 96px;
+  -webkit-border-radius: 0px 0px 96px 96px;
+  -moz-border-radius: 0px 0px 96px 96px;
+  text-align: center;
+}
+
+.subscribe > h1 {
+  font-size: 40pt;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.subscribe > p {
+  margin: 15px 0;
+  font-size: 14pt;
+  font-weight: 500;
+}
+.subscribe > button {
+  padding: 10px;
+  border: 2px solid white;
+  border-bottom: none;
+  background-color: #ee5057;
+  color: white;
+  cursor: pointer;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+  text-align: center;
+  padding: 25px 0;
+  margin: 20px;
+}
+.service:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.service > i {
+  font-size: 50pt;
+  color: #ee5057;
+  margin: 15px;
+}
+.service > h3 {
+  font-size: 18pt;
+  color: #ee5057;
+}
+.service > p {
+  color: gray;
+  margin: 10px 0;
+}
+
+.service > a {
+  text-decoration: none;
+  color: #ee5057;
+}
+
 @media screen and (max-width: 1000px) {
   nav {
     margin: 20px;
@@ -229,9 +316,14 @@ input[type="date"]::placeholder {
   .address {
     width: 100%;
   }
-  .date {
+  .checkin {
+    width: 100%;
+    margin: 0;
+  }
+  .checkout {
     width: 100%;
   }
+
   .date_input {
     margin-top: 20px;
   }
