@@ -126,7 +126,7 @@ main {
 
 .date_input > i {
   position: absolute;
-  left: 0;
+  left: 5px;
   margin: 10px;
   color: #ee5057;
   font-size: 17pt;
@@ -134,7 +134,7 @@ main {
 
 .date_input > label {
   position: absolute;
-  left: 40px;
+  left: 45px;
   top: 12px;
   color: rgb(156, 156, 156);
   font-weight: lighter;
@@ -302,6 +302,9 @@ input[type="date"]::placeholder {
   }
   .burger_icon {
     display: block;
+  }
+  .services {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 1346px) {
