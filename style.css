@@ -290,6 +290,71 @@ input[type="date"]::placeholder {
   color: #ee5057;
 }
 
+.places {
+  display: flex;
+  background-color: #ccc;
+  align-items: center;
+  justify-content: center;
+}
+.city {
+  background-color: white;
+  max-width: 400px;
+  margin: 25px 5px;
+}
+.city > img {
+  width: 100%;
+}
+.city > h3 {
+  margin: 15px 10px;
+  font-size: 20px;
+}
+.city > p {
+  color: rgb(133, 132, 132);
+  font-size: 10pt;
+  margin: 15px 10px;
+}
+
+.btn_city {
+  width: 250px;
+  margin: 20px 60px;
+  padding: 15px;
+  background-color: #ee5057;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.recommendation {
+  background-color: white;
+  max-width: 400px;
+  margin: 15px 20px;
+}
+.recommendation > div {
+  background-color: #ee5057;
+  padding: 25px 15px;
+  color: whitesmoke;
+}
+.recommendation > article {
+  display: flex;
+  align-items: center;
+  margin: 23px 15px;
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+.recommendation > article:hover {
+  color: #ee5057;
+}
+.recommendation > article > h1 {
+  margin: 8px 15px;
+}
+.paused_video {
+  width: 100%;
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+}
+
 @media screen and (max-width: 1000px) {
   nav {
     margin: 20px;
@@ -305,6 +370,10 @@ input[type="date"]::placeholder {
   }
   .services {
     flex-direction: column;
+  }
+  .places {
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 1346px) {
