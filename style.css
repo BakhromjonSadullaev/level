@@ -256,6 +256,7 @@ input[type="date"]::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .service {
@@ -357,21 +358,21 @@ input[type="date"]::placeholder {
 
 .blog_entries {
   background-image: url(https://www.tooplate.com/templates/2095_level/img/bg-img-2.jpg);
-  height: 150vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   border: 30px none transparent;
   border-radius: 0px 0px 250px 250px;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 .overlay {
-  background-image: url(https://www.tooplate.com/templates/2095_level/img/bg-img-2.jpg);
   width: 80%;
+  background: transparent;
   margin: auto;
   display: flex;
   align-items: center;
-  height: 120vh;
   padding: 5px;
 }
 
@@ -387,13 +388,6 @@ input[type="date"]::placeholder {
   font-size: 38pt;
   font-weight: 300;
   color: #ee5057;
-}
-.countries_info {
-  -webkit-box-shadow: 0px 0px 0px 5px #a0a0a0,
-    6px 2px 15px -1px rgba(254, 254, 255, 0.03);
-  box-shadow: 0px 0px 0px 5px #c6c3c3,
-    6px 2px 15px -1px rgba(254, 254, 255, 0.03);
-  max-width: 700px;
 }
 
 .info_each {
@@ -412,6 +406,66 @@ input[type="date"]::placeholder {
   margin: 10px 0;
   font-size: 10pt;
   color: gray;
+}
+.content_sec > a {
+  text-decoration: none;
+  color: #ee5057;
+}
+
+.lastSection {
+  background-image: url(https://www.tooplate.com/templates/2095_level/img/bg-img-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 50px 0;
+}
+.lastSection > img {
+  max-width: 500px;
+}
+.submittion {
+  background-color: #f3f3f3;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 373px;
+  margin-left: 10px;
+}
+.submittion > input {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 10px 0;
+  outline: none;
+  background-color: #ccc;
+  border: none;
+  font-size: 9pt;
+}
+textarea {
+  max-width: 100%;
+  height: 150px;
+}
+
+.submitnow {
+  background-color: #ee5057;
+  padding: 10px 5px;
+  border: none;
+  margin: 5px 0;
+  cursor: pointer;
+}
+.submitnow:hover {
+  background-color: #98191f;
+  color: white;
+}
+footer {
+  text-align: center;
+  background-color: #1f3646;
+  padding: 25px;
+}
+footer > p > span {
+  color: #ee5057;
 }
 
 @media screen and (max-width: 1000px) {
@@ -439,6 +493,19 @@ input[type="date"]::placeholder {
   }
   .info_each > div {
     margin: 10px 5px;
+  }
+  .lastSection {
+    flex-direction: column;
+  }
+  .lastSection > img {
+    width: 100%;
+  }
+  .countries {
+    margin: 0;
+    padding: 0;
+  }
+  .submittion {
+    margin-top: 15px 0;
   }
 }
 @media screen and (max-width: 1346px) {
