@@ -58,6 +58,414 @@ nav > ul > li:active {
 
 .registeration {
   background-image: url("https://www.tooplate.com/templates/2095_level/img/bg-img-1.jpg");
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: white;
+  display: inline-block;
+  margin: auto;
+  padding: 40px 50px;
+}
+
+.row1 {
+  display: flex;
+}
+.destination {
+  position: relative;
+  cursor: pointer;
+}
+.address {
+  padding: 10px 20px 5px 40px;
+  font-size: large;
+  outline: none;
+}
+
+.address:focus {
+  border: 1px solid #ee5057;
+  border-style: groove;
+}
+.destination > i {
+  position: absolute;
+  left: 0;
+  margin: 10px;
+  color: #ee5057;
+  font-size: 17pt;
+}
+.date_input {
+  position: relative;
+  cursor: pointer;
+}
+.checkin {
+  padding: 10px 100px 5px 40px;
+  font-size: large;
+  outline: none;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.checkin:focus {
+  border: 1px solid #ee5057;
+}
+
+.checkout {
+  padding: 10px 100px 5px 40px;
+  font-size: large;
+  outline: none;
+}
+.checkout:focus {
+  border: 1px solid #ee5057;
+}
+
+.date_input > i {
+  position: absolute;
+  left: 5px;
+  margin: 10px;
+  color: #ee5057;
+  font-size: 17pt;
+}
+
+.date_input > label {
+  position: absolute;
+  left: 45px;
+  top: 12px;
+  color: rgb(156, 156, 156);
+  font-weight: lighter;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: block;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-appearance: none;
+}
+
+input[type="date"]::-webkit-datetime-edit-text {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type="date"]::-webkit-datetime-edit-month-field {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type="date"]::-webkit-datetime-edit-day-field {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type="date"]::-webkit-datetime-edit-year-field {
+  -webkit-appearance: none;
+  display: none;
+}
+
+input[type="date"]::placeholder {
+  display: block;
+}
+
+.row2 {
+  display: flex;
+  margin-top: 25px;
+}
+.room_number {
+  position: relative;
+  cursor: pointer;
+}
+
+.room_number > select {
+  padding: 10px 100px 10px 50px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.room_number > select:focus {
+  border: 1px solid #ee5057;
+}
+
+.room_number > i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  color: #ee5057;
+}
+
+.btn {
+  padding: 0 23px;
+  background-color: #ee5057;
+  outline: none;
+  border: none;
+}
+.btn:hover {
+  background-color: #98191f;
+}
+.row3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.row3 > a {
+  text-decoration: none;
+  color: #ee5057;
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0;
+  background-color: #ee5057;
+  color: white;
+  border-radius: 0px 0px 96px 96px;
+  -webkit-border-radius: 0px 0px 96px 96px;
+  -moz-border-radius: 0px 0px 96px 96px;
+  text-align: center;
+}
+
+.subscribe > h1 {
+  font-size: 40pt;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.subscribe > p {
+  margin: 15px 0;
+  font-size: 14pt;
+  font-weight: 500;
+}
+.subscribe > button {
+  padding: 10px;
+  border: 2px solid white;
+  border-bottom: none;
+  background-color: #ee5057;
+  color: white;
+  cursor: pointer;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+  text-align: center;
+  padding: 25px 0;
+  margin: 20px;
+}
+.service:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.service > i {
+  font-size: 50pt;
+  color: #ee5057;
+  margin: 15px;
+}
+.service > h3 {
+  font-size: 18pt;
+  color: #ee5057;
+}
+.service > p {
+  color: gray;
+  margin: 10px 0;
+}
+
+.service > a {
+  text-decoration: none;
+  color: #ee5057;
+}
+
+.places {
+  display: flex;
+  background-color: #ccc;
+  align-items: center;
+  justify-content: center;
+}
+.city {
+  background-color: white;
+  max-width: 400px;
+  margin: 25px 5px;
+}
+.city > img {
+  width: 100%;
+}
+.city > h3 {
+  margin: 15px 10px;
+  font-size: 20px;
+}
+.city > p {
+  color: rgb(133, 132, 132);
+  font-size: 10pt;
+  margin: 15px 10px;
+}
+
+.btn_city {
+  width: 250px;
+  margin: 20px 60px;
+  padding: 15px;
+  background-color: #ee5057;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.recommendation {
+  background-color: white;
+  max-width: 400px;
+  margin: 15px 20px;
+}
+.recommendation > div {
+  background-color: #ee5057;
+  padding: 25px 15px;
+  color: whitesmoke;
+}
+.recommendation > article {
+  display: flex;
+  align-items: center;
+  margin: 23px 15px;
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+.recommendation > article:hover {
+  color: #ee5057;
+}
+.recommendation > article > h1 {
+  margin: 8px 15px;
+}
+.paused_video {
+  width: 100%;
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.blog_entries {
+  background-image: url(https://www.tooplate.com/templates/2095_level/img/bg-img-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 30px none transparent;
+  border-radius: 0px 0px 250px 250px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.overlay {
+  width: 80%;
+  background: transparent;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.countries {
+  margin: 0 150px 0 100px;
+}
+
+.countries > h1 {
+  font-size: 43pt;
+  font-weight: 600;
+}
+.countries > h2 {
+  font-size: 38pt;
+  font-weight: 300;
+  color: #ee5057;
+}
+
+.info_each {
+  display: flex;
+  padding: 10px;
+}
+.info_each > img {
+  margin: 0 10px;
+}
+
+.content_sec > h4 {
+  color: #ee5057;
+}
+
+.content_sec > p {
+  margin: 10px 0;
+  font-size: 10pt;
+  color: gray;
+}
+.content_sec > a {
+  text-decoration: none;
+  color: #ee5057;
+}
+
+.lastSection {
+  background-image: url(https://www.tooplate.com/templates/2095_level/img/bg-img-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 50px 0;
+}
+.lastSection > img {
+  max-width: 500px;
+}
+.submittion {
+  background-color: #f3f3f3;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 373px;
+  margin-left: 10px;
+}
+.submittion > input {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 10px 0;
+  outline: none;
+  background-color: #ccc;
+  border: none;
+  font-size: 9pt;
+}
+textarea {
+  max-width: 100%;
+  height: 150px;
+}
+
+.submitnow {
+  background-color: #ee5057;
+  padding: 10px 5px;
+  border: none;
+  margin: 5px 0;
+  cursor: pointer;
+}
+.submitnow:hover {
+  background-color: #98191f;
+  color: white;
+}
+footer {
+  text-align: center;
+  background-color: #1f3646;
+  padding: 25px;
+}
+footer > p > span {
+  color: #ee5057;
 }
 
 @media screen and (max-width: 1000px) {
@@ -72,5 +480,72 @@ nav > ul > li:active {
   }
   .burger_icon {
     display: block;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .places {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .info_each {
+    flex-direction: column;
+  }
+  .info_each > div {
+    margin: 10px 5px;
+  }
+  .lastSection {
+    flex-direction: column;
+  }
+  .lastSection > img {
+    width: 100%;
+  }
+  .countries {
+    margin: 0;
+    padding: 0;
+  }
+  .submittion {
+    margin-top: 15px 0;
+  }
+}
+@media screen and (max-width: 1346px) {
+  main {
+    width: 100%;
+    padding: 25px 10px;
+  }
+  .row1 {
+    flex-direction: column;
+    margin: 0;
+  }
+  .address {
+    width: 100%;
+  }
+  .checkin {
+    width: 100%;
+    margin: 0;
+  }
+  .checkout {
+    width: 100%;
+  }
+
+  .date_input {
+    margin-top: 20px;
+  }
+  .row2 {
+    flex-direction: column;
+    margin: 0;
+  }
+  .room_number > select {
+    width: 100%;
+    margin: 0;
+  }
+  .room_number {
+    margin: 10px 0;
+  }
+  .btn {
+    padding: 20px 10px;
+  }
+  .overlay {
+    flex-direction: column;
   }
 }
